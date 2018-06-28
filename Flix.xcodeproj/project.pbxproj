@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE21FFDF20E4605800F97FAF /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE21FFDE20E4605800F97FAF /* MoviesViewController.m */; };
 		CE85251420E40B530019CF52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85251320E40B530019CF52 /* AppDelegate.m */; };
-		CE85251720E40B530019CF52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85251620E40B530019CF52 /* ViewController.m */; };
 		CE85251A20E40B530019CF52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE85251820E40B530019CF52 /* Main.storyboard */; };
 		CE85251C20E40B540019CF52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE85251B20E40B540019CF52 /* Assets.xcassets */; };
 		CE85251F20E40B540019CF52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE85251D20E40B540019CF52 /* LaunchScreen.storyboard */; };
@@ -35,11 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE21FFDD20E4605800F97FAF /* MoviesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		CE21FFDE20E4605800F97FAF /* MoviesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
 		CE85250F20E40B530019CF52 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE85251220E40B530019CF52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE85251320E40B530019CF52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE85251520E40B530019CF52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE85251620E40B530019CF52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE85251920E40B530019CF52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE85251B20E40B540019CF52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE85251E20E40B540019CF52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +78,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE21FFE020E461F900F97FAF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE21FFDD20E4605800F97FAF /* MoviesViewController.h */,
+				CE21FFDE20E4605800F97FAF /* MoviesViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE21FFE120E4621600F97FAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE21FFE220E4621E00F97FAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CE85250620E40B530019CF52 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +124,11 @@
 		CE85251120E40B530019CF52 /* Flix */ = {
 			isa = PBXGroup;
 			children = (
+				CE21FFE220E4621E00F97FAF /* Models */,
+				CE21FFE120E4621600F97FAF /* Views */,
+				CE21FFE020E461F900F97FAF /* View Controllers */,
 				CE85251220E40B530019CF52 /* AppDelegate.h */,
 				CE85251320E40B530019CF52 /* AppDelegate.m */,
-				CE85251520E40B530019CF52 /* ViewController.h */,
-				CE85251620E40B530019CF52 /* ViewController.m */,
 				CE85251820E40B530019CF52 /* Main.storyboard */,
 				CE85251B20E40B540019CF52 /* Assets.xcassets */,
 				CE85251D20E40B540019CF52 /* LaunchScreen.storyboard */,
@@ -262,9 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE85251720E40B530019CF52 /* ViewController.m in Sources */,
 				CE85252220E40B540019CF52 /* main.m in Sources */,
 				CE85251420E40B530019CF52 /* AppDelegate.m in Sources */,
+				CE21FFDF20E4605800F97FAF /* MoviesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
