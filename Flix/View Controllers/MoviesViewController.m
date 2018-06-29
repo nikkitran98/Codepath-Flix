@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+
 // creates private instance variable under hood as _movies with setter and getter
 @property (nonatomic, strong) NSArray *movies;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
@@ -37,6 +38,7 @@
 }
 
 - (void)fetchMovies {
+    
     NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
@@ -112,6 +114,14 @@
     cell.posterView.image = nil;
     // sets image to cell
     [cell.posterView setImageWithURL:posterURL];
+    
+    // !!
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    // !!
+    UIView *backgroundView = [[UIView alloc] init];
+    backgroundView.backgroundColor = UIColor.blueColor;
+    cell.selectedBackgroundView = backgroundView;
     
     return cell;
 }
