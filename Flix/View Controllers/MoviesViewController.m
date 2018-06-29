@@ -138,13 +138,9 @@
                                     failure:^(NSURLRequest *request, NSHTTPURLResponse * response, NSError *error) {
                                         // do something for the failure condition
                                     }];
-    
-    // !!
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
-    // !!
+
     UIView *backgroundView = [[UIView alloc] init];
-    backgroundView.backgroundColor = UIColor.blueColor;
+    backgroundView.backgroundColor = UIColor.grayColor;
     cell.selectedBackgroundView = backgroundView;
     
     return cell;
