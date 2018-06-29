@@ -22,6 +22,8 @@
 		CE85252220E40B540019CF52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85252120E40B540019CF52 /* main.m */; };
 		CE85252C20E40B550019CF52 /* FlixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85252B20E40B550019CF52 /* FlixTests.m */; };
 		CE85253720E40B550019CF52 /* FlixUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85253620E40B550019CF52 /* FlixUITests.m */; };
+		CEA991EB20E6DA840000C714 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA991EA20E6DA840000C714 /* WebKit.framework */; };
+		CEA991EE20E6DBCA0000C714 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA991ED20E6DBCA0000C714 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,9 @@
 		CE85253220E40B550019CF52 /* FlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE85253620E40B550019CF52 /* FlixUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlixUITests.m; sourceTree = "<group>"; };
 		CE85253820E40B550019CF52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA991EA20E6DA840000C714 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CEA991EC20E6DBCA0000C714 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		CEA991ED20E6DBCA0000C714 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA991EB20E6DA840000C714 /* WebKit.framework in Frameworks */,
 				366AE086A9044F8D2507308A /* libPods-Flix.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +114,7 @@
 		9FFD4658DFE5362C6E022AC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEA991EA20E6DA840000C714 /* WebKit.framework */,
 				388D80B88F404A332BDFB723 /* libPods-Flix.a */,
 				3D2E73AAB46CAF7550E26DDD /* libPods-FlixTests.a */,
 				43462E71C5A83162C5F31B6E /* libPods-FlixUITests.a */,
@@ -131,6 +138,8 @@
 		CE21FFE020E461F900F97FAF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CEA991EC20E6DBCA0000C714 /* WebViewController.h */,
+				CEA991ED20E6DBCA0000C714 /* WebViewController.m */,
 				CE21FFDD20E4605800F97FAF /* MoviesViewController.h */,
 				CE21FFDE20E4605800F97FAF /* MoviesViewController.m */,
 				CE52F80520E5682D0066010E /* DetailsViewController.h */,
@@ -409,6 +418,7 @@
 				CE85252220E40B540019CF52 /* main.m in Sources */,
 				CE52F80720E5682D0066010E /* DetailsViewController.m in Sources */,
 				CE85251420E40B530019CF52 /* AppDelegate.m in Sources */,
+				CEA991EE20E6DBCA0000C714 /* WebViewController.m in Sources */,
 				CE52F80D20E5A1730066010E /* MovieCollectionCell.m in Sources */,
 				CE52F80420E55CA40066010E /* MovieCell.m in Sources */,
 				CE21FFDF20E4605800F97FAF /* MoviesViewController.m in Sources */,

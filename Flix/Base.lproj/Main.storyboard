@@ -91,9 +91,13 @@
                                         <rect key="frame" x="0.0" y="-64" width="375" height="247"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQV-wy-Qgr">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQV-wy-Qgr">
                                         <rect key="frame" x="8" y="92" width="129" height="181"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="K57-BP-jXI" appends="YES" id="2R9-aI-yFg"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yka-us-GwK">
                                         <rect key="frame" x="8" y="281" width="359" height="28"/>
@@ -123,8 +127,36 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRK-zE-fQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DMF-72-XkQ" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="K57-BP-jXI">
+                    <connections>
+                        <action selector="didTap:" destination="DMF-72-XkQ" id="2jc-1I-w1c"/>
+                        <segue destination="IlY-oQ-KQz" kind="show" id="1fe-Ib-Hh6"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="473" y="743"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="NBh-Ym-InE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yc6-g1-5iH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="IlY-oQ-KQz" customClass="WebViewController" sceneMemberID="viewController">
+                    <wkWebView key="view" contentMode="scaleToFill" id="CO2-GO-I60">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                    <connections>
+                        <outlet property="webkitView" destination="CO2-GO-I60" id="NyF-71-7xx"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="478" y="1435"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="njs-pG-eNU">
