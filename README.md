@@ -2,7 +2,7 @@
 
 **Flix** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **20** hours spent in total
+Time spent: **16** hours spent in total
 
 ## User Stories
 
@@ -39,15 +39,15 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-https://i.imgur.com/xjP96sYs.gif
+<img src='https://i.imgur.com/kJThjC1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<img src='https://i.imgur.com/xjP96sY.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/fl5udKa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I had difficulties trying to implement the search bar and adding the feature to load a trailer when a user clicked on a movie poster in detailed view.
 
 ## Credits
 
